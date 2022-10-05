@@ -15,7 +15,7 @@ public class Gaulois {
 	}
 	   
 	public void parler(String texte) {
-	    System.out.println(prendreParole() + "Â« " + texte + "Â»");
+	    System.out.println(prendreParole() + "« " + texte + "»");
 	}
 	   
 	private String prendreParole() {
@@ -29,15 +29,18 @@ public class Gaulois {
 	}
 	   
 	//@Override
-//	//public String toString() {
-//	    return "Gaulois [nom=" + nom + ", force=" + force
-//	           + ", effetPotion=" + effetPotion + "]";
-	//}
+	public String toString() {
+	    return "Gaulois [nom=" + nom + ", force=" + force
+	           + ", effetPotion=" + effetPotion + "]";
+	}
 	   
 	public static void main(String[] args) {
-		//TODO creÃŒï¿½er un main permettant de tester la classe Gaulois
+		//TODO creer un main permettant de tester la classe Gaulois
 		Gaulois asterix = new Gaulois ("Asterix", 8);
 		System.out.println(asterix);
+		asterix.parler("Bonjour!");
+		asterix.prendreParole();
+		//asterix.frapper(minus);
 	}
 }
 

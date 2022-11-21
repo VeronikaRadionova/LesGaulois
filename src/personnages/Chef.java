@@ -18,7 +18,7 @@ public class Chef {
 	}
 	   
 	public void parler(String texte) {
-	    System.out.println(prendreParole() + "« " + texte + "»");
+	    System.out.println(prendreParole() + "ï¿½ " + texte + "ï¿½");
 	}
 	   
 	private String prendreParole() {
